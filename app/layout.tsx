@@ -5,8 +5,8 @@ import { Inter } from "next/font/google"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Modern Linktree",
-  description: "A modern Linktree-style page with animations",
+  title: "Md. Nafees",
+  description: "Md. Nafees",
 }
 
 export default function RootLayout({
