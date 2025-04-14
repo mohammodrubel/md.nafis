@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Instagram, Mail, MessageCircle } from "lucide-react"
+import { Github, Instagram, Mail, MessageCircle, Phone } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import logo from "../assets/logo.jpg"
@@ -15,14 +15,18 @@ export default function LinktreePage() {
             {/* <AvatarFallback className="text-2xl">ME</AvatarFallback> */}
           </Avatar>
           <div className="text-center">
-            <h1 className="text-2xl font-bold">Md. Nafees</h1>
+            <h1 className="text-2xl font-bold">Design Interior Prime</h1>
           </div>
         </div>
 
         <div className="space-y-4">
-          <LinkButton href="https://wa.me/01774751770" icon={<MessageCircle className="h-5 w-5" />}>
+
+          {/* <LinkButton
+            href="https://api.whatsapp.com/send?phone=8801774751770"
+            icon={<MessageCircle className="h-5 w-5" />}
+          >
             WhatsApp
-          </LinkButton>
+          </LinkButton> */}
 
           <LinkButton
             href="https://m.me/DesignInteriorPrime"
@@ -38,8 +42,14 @@ export default function LinktreePage() {
           <LinkButton href="mailto:designinteriorprime@gmail.com" icon={<Mail className="h-5 w-5" />}>
             Email Me
           </LinkButton>
+          <LinkButton
+            href="tel:+8801774751770"  // Use international format with "+"
+            icon={<Phone className="h-5 w-5" />}  // Assuming you have a Phone icon
+          >
+            Call Us
+          </LinkButton>
         </div>
-{/* 
+        {/* 
         <footer className="pt-8 text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Your Name
         </footer> */}
